@@ -1,0 +1,4 @@
+/* This file can be used to write global styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

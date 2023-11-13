@@ -1,4 +1,4 @@
-# My Next.js App
+# Quoter Online
 
 This is a Next.js 13 project, connected with Tailwind, ESLint, TypeScript, and Mongoose for API.
 

@@ -4,7 +4,7 @@ const { Schema, model } = require("mongoose");
 const UserSchema = new Schema({
   email: String,
   password: String,
-  fullName: String,
+  name: String,
 }, {timestamps: true});
 
 UserSchema.pre('save', async function (next) {

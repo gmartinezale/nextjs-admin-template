@@ -3,13 +3,13 @@ import { useFormState } from "react-dom";
 import { logout } from "@/lib/actions";
 
 interface IHeaderProps {
-  setToggleOpen?: (toggleOpen: boolean) => void;
+  setToggleOpen: (toggleOpen: boolean) => void;
   toggleOpen?: boolean;
 }
 
 export default function Header({ setToggleOpen, toggleOpen }: IHeaderProps) {
   const toggleSidebar = () => {
-    setToggleOpen && setToggleOpen(!toggleOpen);
+    setToggleOpen(!toggleOpen);
   };
   const [state, dispatch] = useFormState(logout, undefined);
 
@@ -23,10 +23,10 @@ export default function Header({ setToggleOpen, toggleOpen }: IHeaderProps) {
               aria-expanded="true"
               aria-controls="sidebar"
               className="p-2 hidden sm:block rounded cursor-pointer focus:bg-gray-700 focus:ring-2 focus:ring-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white"
+              onClick={toggleSidebar}
             >
               <Bars3Icon
                 className="w-6 h-6 text-gray-300"
-                onClick={toggleSidebar}
               />
             </button>
             <button

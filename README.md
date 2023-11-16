@@ -1,31 +1,28 @@
-# Quoter Online
+# ADMIN TEMPLATE NEXT 14
 
-This is a Next.js 13 project, connected with Tailwind, ESLint, TypeScript, and Mongoose for API.
+This is a Next.js 14 project, connected with Tailwind, ESLint, TypeScript, and Mongoose for API.
 
-## Project Structure
+## Few Requirements
 
-- `pages/_app.tsx`: Main component used to initialize pages.
-- `pages/api/handler.ts`: Handles API requests.
-- `pages/index.tsx`: Main page of the application.
-- `src/lib/mongoose.ts`: Sets up the connection to the MongoDB database using Mongoose.
-- `src/styles/index.css`: Contains global CSS styles.
-- `styles/globals.css` and `styles/Home.module.css`: Contain CSS styles for specific components or pages.
-- `.eslintrc.js`: Configuration file for ESLint.
-- `package.json`: Configuration file for npm.
-- `postcss.config.js`: Configuration file for PostCSS.
-- `tailwind.config.js`: Configuration file for Tailwind CSS.
-- `tsconfig.json`: Configuration file for TypeScript.
+- [NodeJS >= 18.x](https://nodejs.org/)
+- [yarn >= 1.22.10](https://yarnpkg.com/)
+- [MongoDB](https://www.mongodb.com/try/download/community) server
 
 ## Installation
 
 1. Clone the repository.
-2. Run `npm install` to install the dependencies.
-3. Set up your MongoDB database and update the connection string in `src/lib/mongoose.ts`.
-4. Run `npm run dev` to start the development server.
+2. Run `yarn install` to install the dependencies.
+3. Replace `.env.example` with `.env` and fill it with your own values.
+4. Replace connection in the seed process in `scripts/seed.js`.
+5. Run the seed process with `node scripts/seed.js`.
+6. Run `yarn dev` to start the development server.
 
 ## Usage
 
 Visit `http://localhost:3000` in your browser to view the application.
+
+## Icons
+This project uses [Heroicons](https://heroicons.com/)
 
 ## Contributing
 
